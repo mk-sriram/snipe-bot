@@ -1,0 +1,8 @@
+try:
+            sqliteConnection.execute(f"UPDATE SNIPERBOT SET SNIPES = SNIPES + 1 WHERE ID = {sniper_id}")
+            sqliteConnection.execute(f"UPDATE SNIPERBOT SET SNIPPED = SNIPPED + 1 WHERE ID IN {listIDsniped}")
+            sniper_count = sqliteConnection.execute(f"SELECT SNIPES FROM SNIPERBOT WHERE ID = {sniper_id}")
+            
+        except:
+            await message.channel.send(f"{sniper} sniped {sniped_names} but scores were not updated.")
+            return
