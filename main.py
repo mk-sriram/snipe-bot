@@ -35,8 +35,8 @@ def run():
     async def on_message(message):
         if message.author == bot.user:
             return
-
-        print(len(message.attachments))
+       
+        
         if (len(message.attachments) != 0):
             
             listSniped = message.mentions
@@ -102,11 +102,10 @@ def run():
             print("result for sniper count from graph: ", result[0][0])
             sniper_count_value = result[0][0]  # Assuming SNIPES is the second column in the SELECT query
             
-            sniperMessage = f"{sniper} sniped {sniped_names}. {sniper} has sniped {sniper_count_value} times!! "
+            sniperMessage = f"{sniper} sniped {sniped_names}. {sniper} has sniped `{sniper_count_value}` times!! "
             snipedMessage = ""
             for x,y in score_dict.items():
-                print("name: ", x , " score: ",y)
-                snipedMessage += f"{x} has been sniped {y} times."
+                snipedMessage += f" {x} has been sniped `{y}` times."
             
             totalMessage = sniperMessage + snipedMessage
             await message.channel.send(totalMessage)

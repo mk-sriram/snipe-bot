@@ -8305,3 +8305,2268 @@ Traceback (most recent call last):
     raise LoginFailure('Improper token has been passed.') from exc
 discord.errors.LoginFailure: Improper token has been passed.
 [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `python3 main.py`[39m
+[2024-02-19 01:56:42] [INFO    ] discord.client: logging in using static token
+Opened database successfully
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 803, in static_login
+    data = await self.request(Route('GET', '/users/@me'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 745, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 401 Unauthorized (error code: 0): 401: Unauthorized
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 126, in <module>
+    run() 
+    ^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 122, in run
+    bot.run(DISCORD_API_TOKEN) #remove this and ENV it later 
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 860, in run
+    asyncio.run(runner())
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 849, in runner
+    await self.start(token, reconnect=reconnect)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 777, in start
+    await self.login(token)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 612, in login
+    data = await self.http.static_login(token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 807, in static_login
+    raise LoginFailure('Improper token has been passed.') from exc
+discord.errors.LoginFailure: Improper token has been passed.
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `python3 main.py`[39m
+[2024-02-19 01:56:54] [INFO    ] discord.client: logging in using static token
+Opened database successfully
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 803, in static_login
+    data = await self.request(Route('GET', '/users/@me'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 745, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 401 Unauthorized (error code: 0): 401: Unauthorized
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 126, in <module>
+    run() 
+    ^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 122, in run
+    bot.run(DISCORD_API_TOKEN) #remove this and ENV it later 
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 860, in run
+    asyncio.run(runner())
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 849, in runner
+    await self.start(token, reconnect=reconnect)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 777, in start
+    await self.login(token)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 612, in login
+    data = await self.http.static_login(token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 807, in static_login
+    raise LoginFailure('Improper token has been passed.') from exc
+discord.errors.LoginFailure: Improper token has been passed.
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `python3 main.py`[39m
+[2024-02-19 01:57:32] [INFO    ] discord.client: logging in using static token
+Opened database successfully
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 803, in static_login
+    data = await self.request(Route('GET', '/users/@me'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 745, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 401 Unauthorized (error code: 0): 401: Unauthorized
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 126, in <module>
+    run() 
+    ^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 122, in run
+    bot.run(DISCORD_API_TOKEN) #remove this and ENV it later 
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 860, in run
+    asyncio.run(runner())
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 849, in runner
+    await self.start(token, reconnect=reconnect)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 777, in start
+    await self.login(token)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 612, in login
+    data = await self.http.static_login(token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 807, in static_login
+    raise LoginFailure('Improper token has been passed.') from exc
+discord.errors.LoginFailure: Improper token has been passed.
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `python3 main.py`[39m
+(node:37431) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 exit listeners added to [Bus]. Use emitter.setMaxListeners() to increase limit
+[2024-02-19 01:57:33] [INFO    ] discord.client: logging in using static token
+Opened database successfully
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 803, in static_login
+    data = await self.request(Route('GET', '/users/@me'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 745, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 401 Unauthorized (error code: 0): 401: Unauthorized
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 126, in <module>
+    run() 
+    ^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 122, in run
+    bot.run(DISCORD_API_TOKEN) #remove this and ENV it later 
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 860, in run
+    asyncio.run(runner())
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 849, in runner
+    await self.start(token, reconnect=reconnect)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 777, in start
+    await self.login(token)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 612, in login
+    data = await self.http.static_login(token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 807, in static_login
+    raise LoginFailure('Improper token has been passed.') from exc
+discord.errors.LoginFailure: Improper token has been passed.
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `python3 main.py`[39m
+[2024-02-19 01:57:36] [INFO    ] discord.client: logging in using static token
+Opened database successfully
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 803, in static_login
+    data = await self.request(Route('GET', '/users/@me'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 745, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 401 Unauthorized (error code: 0): 401: Unauthorized
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 126, in <module>
+    run() 
+    ^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 122, in run
+    bot.run(DISCORD_API_TOKEN) #remove this and ENV it later 
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 860, in run
+    asyncio.run(runner())
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 849, in runner
+    await self.start(token, reconnect=reconnect)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 777, in start
+    await self.login(token)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 612, in login
+    data = await self.http.static_login(token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 807, in static_login
+    raise LoginFailure('Improper token has been passed.') from exc
+discord.errors.LoginFailure: Improper token has been passed.
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `python3 main.py`[39m
+[2024-02-19 01:57:38] [INFO    ] discord.client: logging in using static token
+Opened database successfully
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 803, in static_login
+    data = await self.request(Route('GET', '/users/@me'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 745, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 401 Unauthorized (error code: 0): 401: Unauthorized
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 126, in <module>
+    run() 
+    ^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 122, in run
+    bot.run(DISCORD_API_TOKEN) #remove this and ENV it later 
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 860, in run
+    asyncio.run(runner())
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 849, in runner
+    await self.start(token, reconnect=reconnect)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 777, in start
+    await self.login(token)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 612, in login
+    data = await self.http.static_login(token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 807, in static_login
+    raise LoginFailure('Improper token has been passed.') from exc
+discord.errors.LoginFailure: Improper token has been passed.
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `python3 main.py`[39m
+[2024-02-19 01:58:30] [INFO    ] discord.client: logging in using static token
+Opened database successfully
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 803, in static_login
+    data = await self.request(Route('GET', '/users/@me'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 745, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 401 Unauthorized (error code: 0): 401: Unauthorized
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 126, in <module>
+    run() 
+    ^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 122, in run
+    bot.run(DISCORD_API_TOKEN) #remove this and ENV it later 
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 860, in run
+    asyncio.run(runner())
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 849, in runner
+    await self.start(token, reconnect=reconnect)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 777, in start
+    await self.login(token)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 612, in login
+    data = await self.http.static_login(token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 807, in static_login
+    raise LoginFailure('Improper token has been passed.') from exc
+discord.errors.LoginFailure: Improper token has been passed.
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `python3 main.py`[39m
+[2024-02-19 01:58:35] [INFO    ] discord.client: logging in using static token
+Opened database successfully
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 803, in static_login
+    data = await self.request(Route('GET', '/users/@me'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 745, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 401 Unauthorized (error code: 0): 401: Unauthorized
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 126, in <module>
+    run() 
+    ^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 122, in run
+    bot.run(DISCORD_API_TOKEN) #remove this and ENV it later 
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 860, in run
+    asyncio.run(runner())
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 849, in runner
+    await self.start(token, reconnect=reconnect)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 777, in start
+    await self.login(token)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 612, in login
+    data = await self.http.static_login(token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 807, in static_login
+    raise LoginFailure('Improper token has been passed.') from exc
+discord.errors.LoginFailure: Improper token has been passed.
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `python3 main.py`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `python3 main.py`[39m
+[2024-02-19 01:58:39] [INFO    ] discord.client: logging in using static token
+Opened database successfully
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 803, in static_login
+    data = await self.request(Route('GET', '/users/@me'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 745, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 401 Unauthorized (error code: 0): 401: Unauthorized
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 126, in <module>
+    run() 
+    ^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 122, in run
+    bot.run(DISCORD_API_TOKEN) #remove this and ENV it later 
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 860, in run
+    asyncio.run(runner())
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 849, in runner
+    await self.start(token, reconnect=reconnect)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 777, in start
+    await self.login(token)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 612, in login
+    data = await self.http.static_login(token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 807, in static_login
+    raise LoginFailure('Improper token has been passed.') from exc
+discord.errors.LoginFailure: Improper token has been passed.
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `python3 main.py`[39m
+[2024-02-19 01:58:42] [INFO    ] discord.client: logging in using static token
+Opened database successfully
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 803, in static_login
+    data = await self.request(Route('GET', '/users/@me'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 745, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 401 Unauthorized (error code: 0): 401: Unauthorized
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 126, in <module>
+    run() 
+    ^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 122, in run
+    bot.run(DISCORD_API_TOKEN) #remove this and ENV it later 
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 860, in run
+    asyncio.run(runner())
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 849, in runner
+    await self.start(token, reconnect=reconnect)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 777, in start
+    await self.login(token)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 612, in login
+    data = await self.http.static_login(token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 807, in static_login
+    raise LoginFailure('Improper token has been passed.') from exc
+discord.errors.LoginFailure: Improper token has been passed.
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `python3 main.py`[39m
+[2024-02-19 01:58:55] [INFO    ] discord.client: logging in using static token
+Opened database successfully
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 803, in static_login
+    data = await self.request(Route('GET', '/users/@me'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 745, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 401 Unauthorized (error code: 0): 401: Unauthorized
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 126, in <module>
+    run() 
+    ^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 122, in run
+    bot.run(DISCORD_API_TOKEN) #remove this and ENV it later 
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 860, in run
+    asyncio.run(runner())
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 849, in runner
+    await self.start(token, reconnect=reconnect)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 777, in start
+    await self.login(token)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 612, in login
+    data = await self.http.static_login(token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 807, in static_login
+    raise LoginFailure('Improper token has been passed.') from exc
+discord.errors.LoginFailure: Improper token has been passed.
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `python3 main.py`[39m
+[2024-02-19 01:58:56] [INFO    ] discord.client: logging in using static token
+Opened database successfully
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 803, in static_login
+    data = await self.request(Route('GET', '/users/@me'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 745, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 401 Unauthorized (error code: 0): 401: Unauthorized
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 126, in <module>
+    run() 
+    ^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 122, in run
+    bot.run(DISCORD_API_TOKEN) #remove this and ENV it later 
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 860, in run
+    asyncio.run(runner())
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 849, in runner
+    await self.start(token, reconnect=reconnect)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 777, in start
+    await self.login(token)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 612, in login
+    data = await self.http.static_login(token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 807, in static_login
+    raise LoginFailure('Improper token has been passed.') from exc
+discord.errors.LoginFailure: Improper token has been passed.
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `python3 main.py`[39m
+[2024-02-19 01:59:25] [INFO    ] discord.client: logging in using static token
+Opened database successfully
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 803, in static_login
+    data = await self.request(Route('GET', '/users/@me'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 745, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 401 Unauthorized (error code: 0): 401: Unauthorized
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 126, in <module>
+    run() 
+    ^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 122, in run
+    bot.run(DISCORD_API_TOKEN) #remove this and ENV it later 
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 860, in run
+    asyncio.run(runner())
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 849, in runner
+    await self.start(token, reconnect=reconnect)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 777, in start
+    await self.login(token)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 612, in login
+    data = await self.http.static_login(token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 807, in static_login
+    raise LoginFailure('Improper token has been passed.') from exc
+discord.errors.LoginFailure: Improper token has been passed.
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `python3 main.py`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `python3 main.py`[39m
+[2024-02-19 01:59:26] [INFO    ] discord.client: logging in using static token
+Opened database successfully
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 803, in static_login
+    data = await self.request(Route('GET', '/users/@me'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 745, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 401 Unauthorized (error code: 0): 401: Unauthorized
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 126, in <module>
+    run() 
+    ^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 122, in run
+    bot.run(DISCORD_API_TOKEN) #remove this and ENV it later 
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 860, in run
+    asyncio.run(runner())
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 849, in runner
+    await self.start(token, reconnect=reconnect)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 777, in start
+    await self.login(token)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 612, in login
+    data = await self.http.static_login(token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 807, in static_login
+    raise LoginFailure('Improper token has been passed.') from exc
+discord.errors.LoginFailure: Improper token has been passed.
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `python3 main.py`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `python3 main.py`[39m
+[2024-02-19 01:59:34] [INFO    ] discord.client: logging in using static token
+Opened database successfully
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 803, in static_login
+    data = await self.request(Route('GET', '/users/@me'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 745, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 401 Unauthorized (error code: 0): 401: Unauthorized
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 126, in <module>
+    run() 
+    ^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 122, in run
+    bot.run(DISCORD_API_TOKEN) #remove this and ENV it later 
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 860, in run
+    asyncio.run(runner())
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 849, in runner
+    await self.start(token, reconnect=reconnect)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 777, in start
+    await self.login(token)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 612, in login
+    data = await self.http.static_login(token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 807, in static_login
+    raise LoginFailure('Improper token has been passed.') from exc
+discord.errors.LoginFailure: Improper token has been passed.
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `python3 main.py`[39m
+[2024-02-19 02:00:20] [INFO    ] discord.client: logging in using static token
+Opened database successfully
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 803, in static_login
+    data = await self.request(Route('GET', '/users/@me'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 745, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 401 Unauthorized (error code: 0): 401: Unauthorized
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 126, in <module>
+    run() 
+    ^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 122, in run
+    bot.run(DISCORD_API_TOKEN) #remove this and ENV it later 
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 860, in run
+    asyncio.run(runner())
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 849, in runner
+    await self.start(token, reconnect=reconnect)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 777, in start
+    await self.login(token)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 612, in login
+    data = await self.http.static_login(token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 807, in static_login
+    raise LoginFailure('Improper token has been passed.') from exc
+discord.errors.LoginFailure: Improper token has been passed.
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `python3 main.py`[39m
+[2024-02-19 02:01:35] [INFO    ] discord.client: logging in using static token
+Opened database successfully
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 803, in static_login
+    data = await self.request(Route('GET', '/users/@me'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 745, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 401 Unauthorized (error code: 0): 401: Unauthorized
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 126, in <module>
+    run() 
+    ^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 122, in run
+    bot.run(DISCORD_API_TOKEN) #remove this and ENV it later 
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 860, in run
+    asyncio.run(runner())
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 849, in runner
+    await self.start(token, reconnect=reconnect)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 777, in start
+    await self.login(token)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 612, in login
+    data = await self.http.static_login(token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 807, in static_login
+    raise LoginFailure('Improper token has been passed.') from exc
+discord.errors.LoginFailure: Improper token has been passed.
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `python3 main.py`[39m
+[2024-02-19 02:01:36] [INFO    ] discord.client: logging in using static token
+Opened database successfully
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 803, in static_login
+    data = await self.request(Route('GET', '/users/@me'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 745, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 401 Unauthorized (error code: 0): 401: Unauthorized
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 126, in <module>
+    run() 
+    ^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 122, in run
+    bot.run(DISCORD_API_TOKEN) #remove this and ENV it later 
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 860, in run
+    asyncio.run(runner())
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 849, in runner
+    await self.start(token, reconnect=reconnect)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 777, in start
+    await self.login(token)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 612, in login
+    data = await self.http.static_login(token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 807, in static_login
+    raise LoginFailure('Improper token has been passed.') from exc
+discord.errors.LoginFailure: Improper token has been passed.
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `python3 main.py`[39m
+[2024-02-19 02:02:27] [INFO    ] discord.client: logging in using static token
+Opened database successfully
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 803, in static_login
+    data = await self.request(Route('GET', '/users/@me'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 745, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 401 Unauthorized (error code: 0): 401: Unauthorized
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 126, in <module>
+    run() 
+    ^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 122, in run
+    bot.run(DISCORD_API_TOKEN) #remove this and ENV it later 
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 860, in run
+    asyncio.run(runner())
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 849, in runner
+    await self.start(token, reconnect=reconnect)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 777, in start
+    await self.login(token)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 612, in login
+    data = await self.http.static_login(token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 807, in static_login
+    raise LoginFailure('Improper token has been passed.') from exc
+discord.errors.LoginFailure: Improper token has been passed.
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `python3 main.py`[39m
+[2024-02-19 02:02:29] [INFO    ] discord.client: logging in using static token
+Opened database successfully
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 803, in static_login
+    data = await self.request(Route('GET', '/users/@me'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 745, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 401 Unauthorized (error code: 0): 401: Unauthorized
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 126, in <module>
+    run() 
+    ^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 122, in run
+    bot.run(DISCORD_API_TOKEN) #remove this and ENV it later 
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 860, in run
+    asyncio.run(runner())
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 849, in runner
+    await self.start(token, reconnect=reconnect)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 777, in start
+    await self.login(token)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 612, in login
+    data = await self.http.static_login(token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 807, in static_login
+    raise LoginFailure('Improper token has been passed.') from exc
+discord.errors.LoginFailure: Improper token has been passed.
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `python3 main.py`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `python3 main.py`[39m
+[2024-02-19 02:02:32] [INFO    ] discord.client: logging in using static token
+Opened database successfully
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 803, in static_login
+    data = await self.request(Route('GET', '/users/@me'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 745, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 401 Unauthorized (error code: 0): 401: Unauthorized
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 126, in <module>
+    run() 
+    ^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 122, in run
+    bot.run(DISCORD_API_TOKEN) #remove this and ENV it later 
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 860, in run
+    asyncio.run(runner())
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 849, in runner
+    await self.start(token, reconnect=reconnect)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 777, in start
+    await self.login(token)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 612, in login
+    data = await self.http.static_login(token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 807, in static_login
+    raise LoginFailure('Improper token has been passed.') from exc
+discord.errors.LoginFailure: Improper token has been passed.
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `python3 main.py`[39m
+[2024-02-19 02:02:35] [INFO    ] discord.client: logging in using static token
+Opened database successfully
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 803, in static_login
+    data = await self.request(Route('GET', '/users/@me'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 745, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 401 Unauthorized (error code: 0): 401: Unauthorized
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 126, in <module>
+    run() 
+    ^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 122, in run
+    bot.run(DISCORD_API_TOKEN) #remove this and ENV it later 
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 860, in run
+    asyncio.run(runner())
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 849, in runner
+    await self.start(token, reconnect=reconnect)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 777, in start
+    await self.login(token)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 612, in login
+    data = await self.http.static_login(token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 807, in static_login
+    raise LoginFailure('Improper token has been passed.') from exc
+discord.errors.LoginFailure: Improper token has been passed.
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `python3 main.py`[39m
+[2024-02-19 02:02:37] [INFO    ] discord.client: logging in using static token
+Opened database successfully
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 803, in static_login
+    data = await self.request(Route('GET', '/users/@me'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 745, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 401 Unauthorized (error code: 0): 401: Unauthorized
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 126, in <module>
+    run() 
+    ^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 122, in run
+    bot.run(DISCORD_API_TOKEN) #remove this and ENV it later 
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 860, in run
+    asyncio.run(runner())
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 849, in runner
+    await self.start(token, reconnect=reconnect)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 777, in start
+    await self.login(token)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 612, in login
+    data = await self.http.static_login(token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 807, in static_login
+    raise LoginFailure('Improper token has been passed.') from exc
+discord.errors.LoginFailure: Improper token has been passed.
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `python3 main.py`[39m
+[2024-02-19 02:02:42] [INFO    ] discord.client: logging in using static token
+Opened database successfully
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 803, in static_login
+    data = await self.request(Route('GET', '/users/@me'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 745, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 401 Unauthorized (error code: 0): 401: Unauthorized
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 126, in <module>
+    run() 
+    ^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 122, in run
+    bot.run(DISCORD_API_TOKEN) #remove this and ENV it later 
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 860, in run
+    asyncio.run(runner())
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 849, in runner
+    await self.start(token, reconnect=reconnect)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 777, in start
+    await self.login(token)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 612, in login
+    data = await self.http.static_login(token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 807, in static_login
+    raise LoginFailure('Improper token has been passed.') from exc
+discord.errors.LoginFailure: Improper token has been passed.
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `python3 main.py`[39m
+[2024-02-19 02:05:46] [INFO    ] discord.client: logging in using static token
+Opened database successfully
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 803, in static_login
+    data = await self.request(Route('GET', '/users/@me'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 745, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 401 Unauthorized (error code: 0): 401: Unauthorized
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 127, in <module>
+    run() 
+    ^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 123, in run
+    bot.run(DISCORD_API_TOKEN) #remove this and ENV it later 
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 860, in run
+    asyncio.run(runner())
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 849, in runner
+    await self.start(token, reconnect=reconnect)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 777, in start
+    await self.login(token)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 612, in login
+    data = await self.http.static_login(token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 807, in static_login
+    raise LoginFailure('Improper token has been passed.') from exc
+discord.errors.LoginFailure: Improper token has been passed.
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `python3 main.py`[39m
+[2024-02-19 02:07:10] [INFO    ] discord.client: logging in using static token
+Opened database successfully
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 803, in static_login
+    data = await self.request(Route('GET', '/users/@me'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 745, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 401 Unauthorized (error code: 0): 401: Unauthorized
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 126, in <module>
+    run() 
+    ^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 122, in run
+    bot.run(DISCORD_API_TOKEN) #remove this and ENV it later 
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 860, in run
+    asyncio.run(runner())
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 849, in runner
+    await self.start(token, reconnect=reconnect)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 777, in start
+    await self.login(token)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 612, in login
+    data = await self.http.static_login(token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 807, in static_login
+    raise LoginFailure('Improper token has been passed.') from exc
+discord.errors.LoginFailure: Improper token has been passed.
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `python3 main.py`[39m
+[2024-02-19 02:11:50] [INFO    ] discord.client: logging in using static token
+Opened database successfully
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 803, in static_login
+    data = await self.request(Route('GET', '/users/@me'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 745, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 401 Unauthorized (error code: 0): 401: Unauthorized
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 126, in <module>
+    run() 
+    ^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 122, in run
+    bot.run(DISCORD_API_TOKEN) #remove this and ENV it later 
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 860, in run
+    asyncio.run(runner())
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 849, in runner
+    await self.start(token, reconnect=reconnect)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 777, in start
+    await self.login(token)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 612, in login
+    data = await self.http.static_login(token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 807, in static_login
+    raise LoginFailure('Improper token has been passed.') from exc
+discord.errors.LoginFailure: Improper token has been passed.
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `python3 main.py`[39m
+[2024-02-19 02:11:53] [INFO    ] discord.client: logging in using static token
+Opened database successfully
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 803, in static_login
+    data = await self.request(Route('GET', '/users/@me'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 745, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 401 Unauthorized (error code: 0): 401: Unauthorized
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 126, in <module>
+    run() 
+    ^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 122, in run
+    bot.run(DISCORD_API_TOKEN) #remove this and ENV it later 
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 860, in run
+    asyncio.run(runner())
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 849, in runner
+    await self.start(token, reconnect=reconnect)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 777, in start
+    await self.login(token)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 612, in login
+    data = await self.http.static_login(token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 807, in static_login
+    raise LoginFailure('Improper token has been passed.') from exc
+discord.errors.LoginFailure: Improper token has been passed.
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `python3 main.py`[39m
+[2024-02-19 02:11:55] [INFO    ] discord.client: logging in using static token
+Opened database successfully
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 803, in static_login
+    data = await self.request(Route('GET', '/users/@me'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 745, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 401 Unauthorized (error code: 0): 401: Unauthorized
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 126, in <module>
+    run() 
+    ^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 122, in run
+    bot.run(DISCORD_API_TOKEN) #remove this and ENV it later 
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 860, in run
+    asyncio.run(runner())
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 849, in runner
+    await self.start(token, reconnect=reconnect)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 777, in start
+    await self.login(token)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 612, in login
+    data = await self.http.static_login(token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 807, in static_login
+    raise LoginFailure('Improper token has been passed.') from exc
+discord.errors.LoginFailure: Improper token has been passed.
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `python3 main.py`[39m
+(node:37431) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 exit listeners added to [Bus]. Use emitter.setMaxListeners() to increase limit
+[2024-02-19 02:11:56] [INFO    ] discord.client: logging in using static token
+Opened database successfully
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 803, in static_login
+    data = await self.request(Route('GET', '/users/@me'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 745, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 401 Unauthorized (error code: 0): 401: Unauthorized
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 126, in <module>
+    run() 
+    ^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 122, in run
+    bot.run(DISCORD_API_TOKEN) #remove this and ENV it later 
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 860, in run
+    asyncio.run(runner())
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 849, in runner
+    await self.start(token, reconnect=reconnect)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 777, in start
+    await self.login(token)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 612, in login
+    data = await self.http.static_login(token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 807, in static_login
+    raise LoginFailure('Improper token has been passed.') from exc
+discord.errors.LoginFailure: Improper token has been passed.
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `python3 main.py`[39m
+[2024-02-19 02:12:04] [INFO    ] discord.client: logging in using static token
+Opened database successfully
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 803, in static_login
+    data = await self.request(Route('GET', '/users/@me'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 745, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 401 Unauthorized (error code: 0): 401: Unauthorized
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 126, in <module>
+    run() 
+    ^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 122, in run
+    bot.run(DISCORD_API_TOKEN) #remove this and ENV it later 
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 860, in run
+    asyncio.run(runner())
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 849, in runner
+    await self.start(token, reconnect=reconnect)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 777, in start
+    await self.login(token)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 612, in login
+    data = await self.http.static_login(token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 807, in static_login
+    raise LoginFailure('Improper token has been passed.') from exc
+discord.errors.LoginFailure: Improper token has been passed.
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `python3 main.py`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `python3 main.py`[39m
+[2024-02-19 02:12:05] [INFO    ] discord.client: logging in using static token
+Opened database successfully
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 803, in static_login
+    data = await self.request(Route('GET', '/users/@me'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 745, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 401 Unauthorized (error code: 0): 401: Unauthorized
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 126, in <module>
+    run() 
+    ^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 122, in run
+    bot.run(DISCORD_API_TOKEN) #remove this and ENV it later 
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 860, in run
+    asyncio.run(runner())
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 849, in runner
+    await self.start(token, reconnect=reconnect)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 777, in start
+    await self.login(token)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 612, in login
+    data = await self.http.static_login(token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 807, in static_login
+    raise LoginFailure('Improper token has been passed.') from exc
+discord.errors.LoginFailure: Improper token has been passed.
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `python3 main.py`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `python3 main.py`[39m
+[2024-02-19 02:12:06] [INFO    ] discord.client: logging in using static token
+Opened database successfully
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 803, in static_login
+    data = await self.request(Route('GET', '/users/@me'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 745, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 401 Unauthorized (error code: 0): 401: Unauthorized
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 126, in <module>
+    run() 
+    ^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 122, in run
+    bot.run(DISCORD_API_TOKEN) #remove this and ENV it later 
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 860, in run
+    asyncio.run(runner())
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 849, in runner
+    await self.start(token, reconnect=reconnect)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 777, in start
+    await self.login(token)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 612, in login
+    data = await self.http.static_login(token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 807, in static_login
+    raise LoginFailure('Improper token has been passed.') from exc
+discord.errors.LoginFailure: Improper token has been passed.
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `python3 main.py`[39m
+[2024-02-19 02:12:08] [INFO    ] discord.client: logging in using static token
+Opened database successfully
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 803, in static_login
+    data = await self.request(Route('GET', '/users/@me'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 745, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 401 Unauthorized (error code: 0): 401: Unauthorized
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 126, in <module>
+    run() 
+    ^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 122, in run
+    bot.run(DISCORD_API_TOKEN) #remove this and ENV it later 
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 860, in run
+    asyncio.run(runner())
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 849, in runner
+    await self.start(token, reconnect=reconnect)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 777, in start
+    await self.login(token)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 612, in login
+    data = await self.http.static_login(token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 807, in static_login
+    raise LoginFailure('Improper token has been passed.') from exc
+discord.errors.LoginFailure: Improper token has been passed.
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `python3 main.py`[39m
+[2024-02-19 02:12:10] [INFO    ] discord.client: logging in using static token
+Opened database successfully
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 803, in static_login
+    data = await self.request(Route('GET', '/users/@me'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 745, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 401 Unauthorized (error code: 0): 401: Unauthorized
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 126, in <module>
+    run() 
+    ^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 122, in run
+    bot.run(DISCORD_API_TOKEN) #remove this and ENV it later 
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 860, in run
+    asyncio.run(runner())
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 849, in runner
+    await self.start(token, reconnect=reconnect)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 777, in start
+    await self.login(token)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 612, in login
+    data = await self.http.static_login(token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 807, in static_login
+    raise LoginFailure('Improper token has been passed.') from exc
+discord.errors.LoginFailure: Improper token has been passed.
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `python3 main.py`[39m
+[2024-02-19 02:12:11] [INFO    ] discord.client: logging in using static token
+Opened database successfully
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 803, in static_login
+    data = await self.request(Route('GET', '/users/@me'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 745, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 401 Unauthorized (error code: 0): 401: Unauthorized
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 126, in <module>
+    run() 
+    ^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 122, in run
+    bot.run(DISCORD_API_TOKEN) #remove this and ENV it later 
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 860, in run
+    asyncio.run(runner())
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 849, in runner
+    await self.start(token, reconnect=reconnect)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 777, in start
+    await self.login(token)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 612, in login
+    data = await self.http.static_login(token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 807, in static_login
+    raise LoginFailure('Improper token has been passed.') from exc
+discord.errors.LoginFailure: Improper token has been passed.
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `python3 main.py`[39m
+[2024-02-19 02:12:14] [INFO    ] discord.client: logging in using static token
+Opened database successfully
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 803, in static_login
+    data = await self.request(Route('GET', '/users/@me'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 745, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 401 Unauthorized (error code: 0): 401: Unauthorized
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 126, in <module>
+    run() 
+    ^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 122, in run
+    bot.run(DISCORD_API_TOKEN) #remove this and ENV it later 
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 860, in run
+    asyncio.run(runner())
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 849, in runner
+    await self.start(token, reconnect=reconnect)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 777, in start
+    await self.login(token)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 612, in login
+    data = await self.http.static_login(token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 807, in static_login
+    raise LoginFailure('Improper token has been passed.') from exc
+discord.errors.LoginFailure: Improper token has been passed.
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `python3 main.py`[39m
+[2024-02-19 02:12:16] [INFO    ] discord.client: logging in using static token
+Opened database successfully
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 803, in static_login
+    data = await self.request(Route('GET', '/users/@me'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 745, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 401 Unauthorized (error code: 0): 401: Unauthorized
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 126, in <module>
+    run() 
+    ^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 122, in run
+    bot.run(DISCORD_API_TOKEN) #remove this and ENV it later 
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 860, in run
+    asyncio.run(runner())
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 849, in runner
+    await self.start(token, reconnect=reconnect)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 777, in start
+    await self.login(token)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 612, in login
+    data = await self.http.static_login(token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 807, in static_login
+    raise LoginFailure('Improper token has been passed.') from exc
+discord.errors.LoginFailure: Improper token has been passed.
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `python3 main.py`[39m
+[2024-02-19 02:12:17] [INFO    ] discord.client: logging in using static token
+Opened database successfully
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 803, in static_login
+    data = await self.request(Route('GET', '/users/@me'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 745, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 401 Unauthorized (error code: 0): 401: Unauthorized
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 126, in <module>
+    run() 
+    ^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 122, in run
+    bot.run(DISCORD_API_TOKEN) #remove this and ENV it later 
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 860, in run
+    asyncio.run(runner())
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 849, in runner
+    await self.start(token, reconnect=reconnect)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 777, in start
+    await self.login(token)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 612, in login
+    data = await self.http.static_login(token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 807, in static_login
+    raise LoginFailure('Improper token has been passed.') from exc
+discord.errors.LoginFailure: Improper token has been passed.
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `python3 main.py`[39m
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 109
+    snipedMessage += f"`{x` has been sniped `{y}` times."
+                                                         ^
+SyntaxError: f-string: expecting '}'
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `python3 main.py`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `python3 main.py`[39m
+[2024-02-19 02:12:48] [INFO    ] discord.client: logging in using static token
+Opened database successfully
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 803, in static_login
+    data = await self.request(Route('GET', '/users/@me'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 745, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 401 Unauthorized (error code: 0): 401: Unauthorized
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 126, in <module>
+    run() 
+    ^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 122, in run
+    bot.run(DISCORD_API_TOKEN) #remove this and ENV it later 
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 860, in run
+    asyncio.run(runner())
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 849, in runner
+    await self.start(token, reconnect=reconnect)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 777, in start
+    await self.login(token)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 612, in login
+    data = await self.http.static_login(token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 807, in static_login
+    raise LoginFailure('Improper token has been passed.') from exc
+discord.errors.LoginFailure: Improper token has been passed.
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `python3 main.py`[39m
+[2024-02-19 02:12:49] [INFO    ] discord.client: logging in using static token
+Opened database successfully
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 803, in static_login
+    data = await self.request(Route('GET', '/users/@me'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 745, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 401 Unauthorized (error code: 0): 401: Unauthorized
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 126, in <module>
+    run() 
+    ^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 122, in run
+    bot.run(DISCORD_API_TOKEN) #remove this and ENV it later 
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 860, in run
+    asyncio.run(runner())
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 849, in runner
+    await self.start(token, reconnect=reconnect)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 777, in start
+    await self.login(token)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 612, in login
+    data = await self.http.static_login(token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 807, in static_login
+    raise LoginFailure('Improper token has been passed.') from exc
+discord.errors.LoginFailure: Improper token has been passed.
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `python3 main.py`[39m
+[2024-02-19 02:12:51] [INFO    ] discord.client: logging in using static token
+Opened database successfully
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 803, in static_login
+    data = await self.request(Route('GET', '/users/@me'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 745, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 401 Unauthorized (error code: 0): 401: Unauthorized
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 126, in <module>
+    run() 
+    ^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 122, in run
+    bot.run(DISCORD_API_TOKEN) #remove this and ENV it later 
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 860, in run
+    asyncio.run(runner())
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 849, in runner
+    await self.start(token, reconnect=reconnect)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 777, in start
+    await self.login(token)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 612, in login
+    data = await self.http.static_login(token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 807, in static_login
+    raise LoginFailure('Improper token has been passed.') from exc
+discord.errors.LoginFailure: Improper token has been passed.
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `python3 main.py`[39m
+[2024-02-19 02:12:54] [INFO    ] discord.client: logging in using static token
+Opened database successfully
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 803, in static_login
+    data = await self.request(Route('GET', '/users/@me'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 745, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 401 Unauthorized (error code: 0): 401: Unauthorized
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 126, in <module>
+    run() 
+    ^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 122, in run
+    bot.run(DISCORD_API_TOKEN) #remove this and ENV it later 
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 860, in run
+    asyncio.run(runner())
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 849, in runner
+    await self.start(token, reconnect=reconnect)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 777, in start
+    await self.login(token)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 612, in login
+    data = await self.http.static_login(token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 807, in static_login
+    raise LoginFailure('Improper token has been passed.') from exc
+discord.errors.LoginFailure: Improper token has been passed.
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `python3 main.py`[39m
+[2024-02-19 02:12:55] [INFO    ] discord.client: logging in using static token
+Opened database successfully
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 803, in static_login
+    data = await self.request(Route('GET', '/users/@me'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 745, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 401 Unauthorized (error code: 0): 401: Unauthorized
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 126, in <module>
+    run() 
+    ^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 122, in run
+    bot.run(DISCORD_API_TOKEN) #remove this and ENV it later 
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 860, in run
+    asyncio.run(runner())
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 849, in runner
+    await self.start(token, reconnect=reconnect)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 777, in start
+    await self.login(token)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 612, in login
+    data = await self.http.static_login(token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 807, in static_login
+    raise LoginFailure('Improper token has been passed.') from exc
+discord.errors.LoginFailure: Improper token has been passed.
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `python3 main.py`[39m
+[2024-02-19 02:12:59] [INFO    ] discord.client: logging in using static token
+Opened database successfully
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 803, in static_login
+    data = await self.request(Route('GET', '/users/@me'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 745, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 401 Unauthorized (error code: 0): 401: Unauthorized
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 126, in <module>
+    run() 
+    ^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 122, in run
+    bot.run(DISCORD_API_TOKEN) #remove this and ENV it later 
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 860, in run
+    asyncio.run(runner())
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 849, in runner
+    await self.start(token, reconnect=reconnect)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 777, in start
+    await self.login(token)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 612, in login
+    data = await self.http.static_login(token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 807, in static_login
+    raise LoginFailure('Improper token has been passed.') from exc
+discord.errors.LoginFailure: Improper token has been passed.
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `python3 main.py`[39m
+[2024-02-19 02:13:01] [INFO    ] discord.client: logging in using static token
+Opened database successfully
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 803, in static_login
+    data = await self.request(Route('GET', '/users/@me'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 745, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 401 Unauthorized (error code: 0): 401: Unauthorized
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 126, in <module>
+    run() 
+    ^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 122, in run
+    bot.run(DISCORD_API_TOKEN) #remove this and ENV it later 
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 860, in run
+    asyncio.run(runner())
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 849, in runner
+    await self.start(token, reconnect=reconnect)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 777, in start
+    await self.login(token)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 612, in login
+    data = await self.http.static_login(token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 807, in static_login
+    raise LoginFailure('Improper token has been passed.') from exc
+discord.errors.LoginFailure: Improper token has been passed.
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `python3 main.py`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `python3 main.py`[39m
+[2024-02-19 02:13:02] [INFO    ] discord.client: logging in using static token
+Opened database successfully
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 803, in static_login
+    data = await self.request(Route('GET', '/users/@me'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 745, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 401 Unauthorized (error code: 0): 401: Unauthorized
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 126, in <module>
+    run() 
+    ^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 122, in run
+    bot.run(DISCORD_API_TOKEN) #remove this and ENV it later 
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 860, in run
+    asyncio.run(runner())
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 849, in runner
+    await self.start(token, reconnect=reconnect)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 777, in start
+    await self.login(token)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 612, in login
+    data = await self.http.static_login(token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 807, in static_login
+    raise LoginFailure('Improper token has been passed.') from exc
+discord.errors.LoginFailure: Improper token has been passed.
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `python3 main.py`[39m
+[2024-02-19 02:13:04] [INFO    ] discord.client: logging in using static token
+Opened database successfully
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 803, in static_login
+    data = await self.request(Route('GET', '/users/@me'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 745, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 401 Unauthorized (error code: 0): 401: Unauthorized
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 126, in <module>
+    run() 
+    ^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 122, in run
+    bot.run(DISCORD_API_TOKEN) #remove this and ENV it later 
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 860, in run
+    asyncio.run(runner())
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 849, in runner
+    await self.start(token, reconnect=reconnect)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 777, in start
+    await self.login(token)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 612, in login
+    data = await self.http.static_login(token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 807, in static_login
+    raise LoginFailure('Improper token has been passed.') from exc
+discord.errors.LoginFailure: Improper token has been passed.
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `python3 main.py`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `python3 main.py`[39m
+[2024-02-19 02:13:11] [INFO    ] discord.client: logging in using static token
+Opened database successfully
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 803, in static_login
+    data = await self.request(Route('GET', '/users/@me'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 745, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 401 Unauthorized (error code: 0): 401: Unauthorized
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 125, in <module>
+    run() 
+    ^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 121, in run
+    bot.run(DISCORD_API_TOKEN) #remove this and ENV it later 
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 860, in run
+    asyncio.run(runner())
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 849, in runner
+    await self.start(token, reconnect=reconnect)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 777, in start
+    await self.login(token)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 612, in login
+    data = await self.http.static_login(token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 807, in static_login
+    raise LoginFailure('Improper token has been passed.') from exc
+discord.errors.LoginFailure: Improper token has been passed.
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `python3 main.py`[39m
+[2024-02-19 02:13:13] [INFO    ] discord.client: logging in using static token
+Opened database successfully
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 803, in static_login
+    data = await self.request(Route('GET', '/users/@me'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 745, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 401 Unauthorized (error code: 0): 401: Unauthorized
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 125, in <module>
+    run() 
+    ^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 121, in run
+    bot.run(DISCORD_API_TOKEN) #remove this and ENV it later 
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 860, in run
+    asyncio.run(runner())
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 849, in runner
+    await self.start(token, reconnect=reconnect)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 777, in start
+    await self.login(token)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 612, in login
+    data = await self.http.static_login(token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 807, in static_login
+    raise LoginFailure('Improper token has been passed.') from exc
+discord.errors.LoginFailure: Improper token has been passed.
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `python3 main.py`[39m
+[2024-02-19 02:17:38] [INFO    ] discord.client: logging in using static token
+Opened database successfully
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 803, in static_login
+    data = await self.request(Route('GET', '/users/@me'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 745, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 401 Unauthorized (error code: 0): 401: Unauthorized
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 125, in <module>
+    run() 
+    ^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 121, in run
+    bot.run(DISCORD_API_TOKEN) #remove this and ENV it later 
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 860, in run
+    asyncio.run(runner())
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 849, in runner
+    await self.start(token, reconnect=reconnect)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 777, in start
+    await self.login(token)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 612, in login
+    data = await self.http.static_login(token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 807, in static_login
+    raise LoginFailure('Improper token has been passed.') from exc
+discord.errors.LoginFailure: Improper token has been passed.
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `python3 main.py`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `python3 main.py`[39m
+[2024-02-19 02:17:40] [INFO    ] discord.client: logging in using static token
+Opened database successfully
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 803, in static_login
+    data = await self.request(Route('GET', '/users/@me'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 745, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 401 Unauthorized (error code: 0): 401: Unauthorized
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 125, in <module>
+    run() 
+    ^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/main.py", line 121, in run
+    bot.run(DISCORD_API_TOKEN) #remove this and ENV it later 
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 860, in run
+    asyncio.run(runner())
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.7/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 849, in runner
+    await self.start(token, reconnect=reconnect)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 777, in start
+    await self.login(token)
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/client.py", line 612, in login
+    data = await self.http.static_login(token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srirammk/Documents/GitHub/snipe-bot/.venv/lib/python3.11/site-packages/discord/http.py", line 807, in static_login
+    raise LoginFailure('Improper token has been passed.') from exc
+discord.errors.LoginFailure: Improper token has been passed.
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
