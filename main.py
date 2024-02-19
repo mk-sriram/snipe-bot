@@ -41,7 +41,8 @@ def run():
             
             listSniped = message.mentions
             listIDsniped = [ x.id for x in listSniped]
-            listNamesSniped = [ bot.get_user(x) for x in listIDsniped]
+            listNamesSniped = [ await bot.fetch_user(x) for x in listIDsniped]
+            print(listNamesSniped)
             
             sniper_id = message.author.id
             sniper = message.author.display_name
@@ -65,7 +66,7 @@ def run():
                 await message.channel.send(f"Can't snipe without tagging the people")
                 return
             
-            sqliteConnection.execute(f"UPDATE SNIPERBOT SET SNIPES = SNIPES + 1 WHERE ID = {sniper_id}")
+            sqliteConnection.execute(f'''UPDATE SNIPERBOT SET SNIPES = SNIPES + 1 WHERE ID = "{sniper_id}"''')
             sqliteConnection.commit()
             #kills for the sniper
            
@@ -73,7 +74,7 @@ def run():
             #update the sniper counts for the people here, if not in the database , then insert new entry and then update, if alrteady in just update 
             currentScore = []
             for id in listIDsniped:
-                userHereSniped = sqliteConnection.execute(f'''SELECT EXISTS(SELECT 1 FROM SNIPERBOT WHERE ID = "{sniper_id}");''')
+                userHereSniped = sqliteConnection.execute(f'''SELECT EXISTS(SELECT 1 FROM SNIPERBOT WHERE ID = "{id}");''')
                 userHereListSniped = [ x for x in userHereSniped]
                 print(userHereListSniped)
                 userHerefinalSniped = userHereListSniped[0][0]
@@ -83,13 +84,13 @@ def run():
                     sql_querySniped = "INSERT INTO SNIPERBOT (ID, SNIPES, SNIPPED) VALUES (?, ?, ?)"
                     cursor.executemany(sql_querySniped, data_to_insertSniped)
                 
-                sqliteConnection.execute(f"UPDATE SNIPERBOT SET SNIPPED = SNIPPED + 1 WHERE ID {id}")    
+                sqliteConnection.execute(f"UPDATE SNIPERBOT SET SNIPPED = SNIPPED + 1 WHERE ID = {id}")    
                 sqliteConnection.commit()
                 
                 #snipped count retrival -> getting values 
-                sniped_count = sqliteConnection.execute(f"SELECT SNIPES FROM SNIPERBOT WHERE ID = {id}")
-                snipedResult = [z for z in sniper_count] 
-                currentScore.append(snipedResult[0][0])
+                sniped_count = sqliteConnection.execute(f"SELECT SNIPPED FROM SNIPERBOT WHERE ID = {id}") 
+                snipedValue = [ x for x in sniped_count]
+                currentScore.append(snipedValue[0][0])
             
             #sniper counts retrival 
             
@@ -103,7 +104,8 @@ def run():
             
             sniperMessage = f"{sniper} sniped {sniped_names}. {sniper} has sniped {sniper_count_value} times!! "
             snipedMessage = ""
-            for x,y in score_dict:
+            for x,y in score_dict.items():
+                print("name: ", x , " score: ",y)
                 snipedMessage += f"{x} has been sniped {y} times."
             
             totalMessage = sniperMessage + snipedMessage
