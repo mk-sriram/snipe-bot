@@ -68,8 +68,8 @@ def run():
             
             sqliteConnection.execute(f'''UPDATE SNIPERBOT SET SNIPES = SNIPES + 1 WHERE ID = "{sniper_id}"''')
             sqliteConnection.commit()
+            
             #kills for the sniper
-           
 
             #update the sniper counts for the people here, if not in the database , then insert new entry and then update, if alrteady in just update 
             currentScore = []
