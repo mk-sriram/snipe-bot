@@ -35,9 +35,9 @@ def run():
     async def on_message(message):
         if message.author == bot.user:
             return
-        if (message.content.startswith("!score")):
+        if (message.content.startswith("!leader")):
             rows = sqliteConnection.execute(f'''SELECT * FROM SNIPERBOT ORDER BY SNIPES DESC''')
-            embed=discord.Embed(title="Score", color=discord.Color.green())
+            embed=discord.Embed(title="Leaderboard", color=discord.Color.green())
             embed.add_field(name="Name", value="", inline=True)
             embed.add_field(name="Snipes" , value="", inline=True)
             embed.add_field(name="Sniped", value="", inline=True)
@@ -51,15 +51,34 @@ def run():
             await message.channel.send(embed=embed)
             return
             
-        if(message.content.startswith("!ins")):
-           await message.channel.send(f"instructions")
+        if (message.content.startswith("!score")):
+            authorID = message.author.id
+            author = message.author.display_name
+            rows = sqliteConnection.execute(f'''SELECT * FROM SNIPERBOT WHERE ID= "{authorID}"''')
+            for row in rows:
+                await message.channel.send(f"{author} has `{row[1]}` snipes and has been sniped `{row[2]}` times")
+            return
+        
+        if(message.content.startswith("!help")):
+           embed1=discord.Embed(title="Instructions", color=discord.Color.orange())
+           embed1.description = "1.Tag @user along with picture in the same message\n2.`!score` shows your score\n3.`!leader` shows the leaderboard\n4.`!help` for instructions"
+           await message.channel.send(embed=embed1)
            return
             
         if (len(message.mentions) != 0):
             if (len(message.attachments) != 0):
+               
                 
                 listSniped = message.mentions
                 listIDsniped = [ x.id for x in listSniped]
+                 
+                lastMessage = message.channel.last_message
+                lastSniperID = lastMessage.author.id 
+                
+                if lastSniperID in listIDsniped:
+                    #check rn doesnt do anything as the previous msg is always from the SNipe bot and not the user 
+                    await message.channel.send(f"Can't snipe the sniper")
+                    return 
                 listNamesSniped = [ await bot.fetch_user(x) for x in listIDsniped]
                 print(listNamesSniped)
                 
@@ -121,10 +140,10 @@ def run():
                 print("result for sniper count from graph: ", result[0][0])
                 sniper_count_value = result[0][0]  # Assuming SNIPES is the second column in the SELECT query
                 
-                sniperMessage = f"{sniper} sniped {sniped_names}. {sniper} has sniped `{sniper_count_value}` times!! "
+                sniperMessage = f"{sniper} sniped {sniped_names}.\n{sniper} has sniped `{sniper_count_value}` times!! \n"
                 snipedMessage = ""
                 for x,y in score_dict.items():
-                    snipedMessage += f" {x} has been sniped `{y}` times."
+                    snipedMessage += f"{x} has been sniped `{y}` times.\n"
                 
                 totalMessage = sniperMessage + snipedMessage
                 await message.channel.send(totalMessage)
