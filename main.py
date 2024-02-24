@@ -72,13 +72,23 @@ def run():
                 listSniped = message.mentions
                 listIDsniped = [ x.id for x in listSniped]
                  
+                messages = [prevMessage async for prevMessage in message.channel.history(limit=2)]
+                print("-------messages---------")
+                print(messages)
                 lastMessage = message.channel.last_message
-                lastSniperID = lastMessage.author.id 
+                lastSniperID = lastMessage.author.id
                 
+                print("----------------")
+                print(message.author.id)
+                print("----------------")
+                print(lastSniperID) 
+                print("----------------")
                 if lastSniperID in listIDsniped:
                     #check rn doesnt do anything as the previous msg is always from the SNipe bot and not the user 
                     await message.channel.send(f"Can't snipe the sniper")
                     return 
+                print("----------------")
+                
                 listNamesSniped = [ await bot.fetch_user(x) for x in listIDsniped]
                 print(listNamesSniped)
                 
