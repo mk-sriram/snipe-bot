@@ -72,9 +72,14 @@ def run():
                 listSniped = message.mentions
                 listIDsniped = [ x.id for x in listSniped]
                  
-                messages = [prevMessage async for prevMessage in message.channel.history(limit=2)]
-                print("-------messages---------")
-                print(messages)
+                messages = [prevMessage async for prevMessage in message.channel.history(limit=3)]
+                #messages[2] -> what you need to check against 
+                print(messages[2].created_at)
+                print(messages[0].created_at)
+                print("-------old msg author ---------")
+                print(messages[2].author.name)
+                print("-------new msg author ---------")
+                print(messages[0].author.name)
                 lastMessage = message.channel.last_message
                 lastSniperID = lastMessage.author.id
                 
