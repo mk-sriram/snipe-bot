@@ -1,15 +1,9 @@
 import os
-from dotenv import load_dotenv
 import discord
 from discord.ext import commands
 import asyncio
 import sqlite3
 #loading env file
-
-load_dotenv() 
-
-#retriving the token
-DISCORD_API_TOKEN = os.getenv('DISCORD_API_TOKEN')
 #database connections 
 
 sqliteConnection = sqlite3.connect('SniperBot.db')
@@ -19,7 +13,7 @@ cursor = sqliteConnection.cursor()
 
 def run(): 
     intents = discord.Intents.default() 
-    intents.message_content = True
+    intents.messages = True
     bot = commands.Bot(command_prefix="!", intents=intents)
         
     @bot.event
@@ -168,7 +162,7 @@ def run():
         
         
         
-    bot.run(DISCORD_API_TOKEN) #remove this and ENV it later 
+    bot.run("MTIwNTMxNzUyMDQwNDUyMTAyMA.GD-M0b.ysSVfbYwdbg80mbIptIN0qnRYfAvWKq_N9KiZg") #remove this and ENV it later 
 
 
 if __name__ == "__main__":
